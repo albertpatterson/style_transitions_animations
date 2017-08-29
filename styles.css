@@ -2,6 +2,7 @@
     height: 100px;
     width: 100px;
     border: 1px solid black;
+    overflow: hidden;
 }
 
 .largeRect{
@@ -218,6 +219,147 @@
 .twirling-p3{
     transform-origin: 100px 0px;
     animation-name: twirl;
+    animation-delay: .3s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes spin{
+    
+
+
+    0.00% {transform: rotate(-90.00deg)}
+    1.00% {transform: rotate(-84.60deg)}
+    2.00% {transform: rotate(-79.20deg)}
+    3.00% {transform: rotate(-73.80deg)}
+    4.00% {transform: rotate(-68.40deg)}
+    5.00% {transform: rotate(-63.00deg)}
+    6.00% {transform: rotate(-57.60deg)}
+    7.00% {transform: rotate(-52.20deg)}
+    8.00% {transform: rotate(-46.80deg)}
+    9.00% {transform: rotate(-41.40deg)}
+    10.00% {transform: rotate(-36.00deg)}
+    11.00% {transform: rotate(-30.60deg)}
+    12.00% {transform: rotate(-25.20deg)}
+    13.00% {transform: rotate(-19.80deg)}
+    14.00% {transform: rotate(-14.40deg)}
+    15.00% {transform: rotate(-9.00deg)}
+    16.00% {transform: rotate(-3.60deg)}
+    17.00% {transform: rotate(1.80deg)}
+    18.00% {transform: rotate(7.20deg)}
+    19.00% {transform: rotate(12.60deg)}
+    20.00% {transform: rotate(18.00deg)}
+    21.00% {transform: rotate(23.40deg)}
+    22.00% {transform: rotate(28.80deg)}
+    23.00% {transform: rotate(34.20deg)}
+    24.00% {transform: rotate(39.60deg)}
+    25.00% {transform: rotate(45.00deg)}
+    26.00% {transform: rotate(50.40deg)}
+    27.00% {transform: rotate(55.80deg)}
+    28.00% {transform: rotate(61.20deg)}
+    29.00% {transform: rotate(66.60deg)}
+    30.00% {transform: rotate(72.00deg)}
+    31.00% {transform: rotate(77.40deg)}
+    32.00% {transform: rotate(82.80deg)}
+    33.00% {transform: rotate(88.20deg)}
+    34.00% {transform: rotate(93.60deg)}
+    35.00% {transform: rotate(99.00deg)}
+    36.00% {transform: rotate(104.40deg)}
+    37.00% {transform: rotate(109.80deg)}
+    38.00% {transform: rotate(115.20deg)}
+    39.00% {transform: rotate(120.60deg)}
+    40.00% {transform: rotate(126.00deg)}
+    41.00% {transform: rotate(131.40deg)}
+    42.00% {transform: rotate(136.80deg)}
+    43.00% {transform: rotate(142.20deg)}
+    44.00% {transform: rotate(147.60deg)}
+    45.00% {transform: rotate(153.00deg)}
+    46.00% {transform: rotate(158.40deg)}
+    47.00% {transform: rotate(163.80deg)}
+    48.00% {transform: rotate(169.20deg)}
+    49.00% {transform: rotate(174.60deg)}
+    50.00% {transform: rotate(180.00deg)}
+    51.00% {transform: rotate(185.40deg)}
+    52.00% {transform: rotate(190.80deg)}
+    53.00% {transform: rotate(196.20deg)}
+    54.00% {transform: rotate(201.60deg)}
+    55.00% {transform: rotate(207.00deg)}
+    56.00% {transform: rotate(212.40deg)}
+    57.00% {transform: rotate(217.80deg)}
+    58.00% {transform: rotate(223.20deg)}
+    59.00% {transform: rotate(228.60deg)}
+    60.00% {transform: rotate(234.00deg)}
+    61.00% {transform: rotate(239.40deg)}
+    62.00% {transform: rotate(244.80deg)}
+    63.00% {transform: rotate(250.20deg)}
+    64.00% {transform: rotate(255.60deg)}
+    65.00% {transform: rotate(261.00deg)}
+    66.00% {transform: rotate(266.40deg)}
+    67.00% {transform: rotate(271.80deg)}
+    68.00% {transform: rotate(277.20deg)}
+    69.00% {transform: rotate(282.60deg)}
+    70.00% {transform: rotate(288.00deg)}
+    71.00% {transform: rotate(293.40deg)}
+    72.00% {transform: rotate(298.80deg)}
+    73.00% {transform: rotate(304.20deg)}
+    74.00% {transform: rotate(309.60deg)}
+    75.00% {transform: rotate(315.00deg)}
+    76.00% {transform: rotate(320.40deg)}
+    77.00% {transform: rotate(325.80deg)}
+    78.00% {transform: rotate(331.20deg)}
+    79.00% {transform: rotate(336.60deg)}
+    80.00% {transform: rotate(342.00deg)}
+    81.00% {transform: rotate(347.40deg)}
+    82.00% {transform: rotate(352.80deg)}
+    83.00% {transform: rotate(358.20deg)}
+    84.00% {transform: rotate(363.60deg)}
+    85.00% {transform: rotate(369.00deg)}
+    86.00% {transform: rotate(374.40deg)}
+    87.00% {transform: rotate(379.80deg)}
+    88.00% {transform: rotate(385.20deg)}
+    89.00% {transform: rotate(390.60deg)}
+    90.00% {transform: rotate(396.00deg)}
+    91.00% {transform: rotate(401.40deg)}
+    92.00% {transform: rotate(406.80deg)}
+    93.00% {transform: rotate(412.20deg)}
+    94.00% {transform: rotate(417.60deg)}
+    95.00% {transform: rotate(423.00deg)}
+    96.00% {transform: rotate(428.40deg)}
+    97.00% {transform: rotate(433.80deg)}
+    98.00% {transform: rotate(439.20deg)}
+    99.00% {transform: rotate(444.60deg)}
+    100.00% {transform: rotate(450.00deg)}
+
+}
+
+.innerSpinner{
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    transform-origin: 0px 50px;
+    transform: rotate(-90deg)
+}
+
+.spinning {
+    visibility: visible;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.spinning-p1 {
+    visibility: visible;
+    animation-name: spin;
+    animation-delay: .15s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.spinning-p2 {
+    visibility: visible;
+    animation-name: spin;
     animation-delay: .3s;
     animation-duration: 3s;
     animation-iteration-count: infinite;
