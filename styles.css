@@ -53,7 +53,7 @@
 }
 
 .transformSlowly{
-    transition: transform 5s;
+    transition: transform 3s linear;
 }
 
 
@@ -66,7 +66,7 @@
 }
 
 .moveRight{
-    transform: translate(500px);
+    transform: translate(100px);
 }
 
 
@@ -229,7 +229,7 @@
     
 
 
-    0.00% {transform: rotate(-90.00deg)}
+    0.00% {transform: rotate(-90.00deg); visibility: visible}
     1.00% {transform: rotate(-84.60deg)}
     2.00% {transform: rotate(-79.20deg)}
     3.00% {transform: rotate(-73.80deg)}
@@ -329,38 +329,39 @@
     97.00% {transform: rotate(433.80deg)}
     98.00% {transform: rotate(439.20deg)}
     99.00% {transform: rotate(444.60deg)}
-    100.00% {transform: rotate(450.00deg)}
+    100.00% {transform: rotate(450.00deg); visibility: hidden}
 
 }
 
 .innerSpinner{
-    visibility: hidden;
     display: inline-block;
     position: absolute;
     left: 50px;
     transform-origin: 0px 50px;
-    transform: rotate(-90deg)
+    transform: rotate(-90deg);
+    visibility: hidden;
 }
 
 .spinning {
-    visibility: visible;
     animation-name: spin;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 .spinning-p1 {
-    visibility: visible;
     animation-name: spin;
-    animation-delay: .15s;
+    animation-delay: .2s;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 .spinning-p2 {
-    visibility: visible;
     animation-name: spin;
-    animation-delay: .3s;
+    animation-delay: .4s;
     animation-duration: 3s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
+}
+
+.noBorder{
+    border: none;
 }
