@@ -1,0 +1,95 @@
+.ticker{
+    position: relative;
+    left: 69px;
+    border: 1px solid red;
+    height: 70px;
+    width: 0px;
+    transform-origin: 1px 70px;
+}
+
+.ticking{
+    animation-name: tick;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.clockFace{
+    background-image: url("clock.png");
+    background-size: 100%;
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.clock{
+    border: 2px solid black;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+
+@keyframes tick {
+
+    0.00% {transform: rotate(0.00deg)}
+    1.67% {transform: rotate(0.00deg)}
+    3.33% {transform: rotate(12.00deg)}
+    5.00% {transform: rotate(12.00deg)}
+    6.67% {transform: rotate(24.00deg)}
+    8.33% {transform: rotate(24.00deg)}
+    10.00% {transform: rotate(36.00deg)}
+    11.67% {transform: rotate(36.00deg)}
+    13.33% {transform: rotate(48.00deg)}
+    15.00% {transform: rotate(48.00deg)}
+    16.67% {transform: rotate(60.00deg)}
+    18.33% {transform: rotate(60.00deg)}
+    20.00% {transform: rotate(72.00deg)}
+    21.67% {transform: rotate(72.00deg)}
+    23.33% {transform: rotate(84.00deg)}
+    25.00% {transform: rotate(84.00deg)}
+    26.67% {transform: rotate(96.00deg)}
+    28.33% {transform: rotate(96.00deg)}
+    30.00% {transform: rotate(108.00deg)}
+    31.67% {transform: rotate(108.00deg)}
+    33.33% {transform: rotate(120.00deg)}
+    35.00% {transform: rotate(120.00deg)}
+    36.67% {transform: rotate(132.00deg)}
+    38.33% {transform: rotate(132.00deg)}
+    40.00% {transform: rotate(144.00deg)}
+    41.67% {transform: rotate(144.00deg)}
+    43.33% {transform: rotate(156.00deg)}
+    45.00% {transform: rotate(156.00deg)}
+    46.67% {transform: rotate(168.00deg)}
+    48.33% {transform: rotate(168.00deg)}
+    50.00% {transform: rotate(180.00deg)}
+    51.67% {transform: rotate(180.00deg)}
+    53.33% {transform: rotate(192.00deg)}
+    55.00% {transform: rotate(192.00deg)}
+    56.67% {transform: rotate(204.00deg)}
+    58.33% {transform: rotate(204.00deg)}
+    60.00% {transform: rotate(216.00deg)}
+    61.67% {transform: rotate(216.00deg)}
+    63.33% {transform: rotate(228.00deg)}
+    65.00% {transform: rotate(228.00deg)}
+    66.67% {transform: rotate(240.00deg)}
+    68.33% {transform: rotate(240.00deg)}
+    70.00% {transform: rotate(252.00deg)}
+    71.67% {transform: rotate(252.00deg)}
+    73.33% {transform: rotate(264.00deg)}
+    75.00% {transform: rotate(264.00deg)}
+    76.67% {transform: rotate(276.00deg)}
+    78.33% {transform: rotate(276.00deg)}
+    80.00% {transform: rotate(288.00deg)}
+    81.67% {transform: rotate(288.00deg)}
+    83.33% {transform: rotate(300.00deg)}
+    85.00% {transform: rotate(300.00deg)}
+    86.67% {transform: rotate(312.00deg)}
+    88.33% {transform: rotate(312.00deg)}
+    90.00% {transform: rotate(324.00deg)}
+    91.67% {transform: rotate(324.00deg)}
+    93.33% {transform: rotate(336.00deg)}
+    95.00% {transform: rotate(336.00deg)}
+    96.67% {transform: rotate(348.00deg)}
+    98.33% {transform: rotate(348.00deg)}
+    100.00% {transform: rotate(360.00deg)}
+}

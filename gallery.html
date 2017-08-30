@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Styles Transitions and Animations</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="roller.css">
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="clock.css">
   </head>
   <body>
     <p>Fade in/out the background color</p>
@@ -31,16 +34,31 @@
         <div id="div8" class="tinyCircle posRel top130 blue4" ></div>
     </div>
 
-    <p>dance2</p>
-    <button onclick="toggleStyle('div9', 'bouncing'), toggleStyle('div10', 'spinning-p2'), toggleStyle('div11', 'spinning-p1'), toggleStyle('div12', 'spinning')">Dance</button>
-    <!-- <div class="largeRect green"> -->
-        <div id="div9" class="smallSquare transformSlowly noBorder">
-            <div id="div10" class="tinyCircle innerSpinner blue1" ></div>
-            <div id="div11" class="tinyCircle innerSpinner blue1" ></div>
-            <div id="div12" class="tinyCircle innerSpinner blue1" ></div>
+    <p>Roll</p>
+    <button onclick="toggleStyle('div9', 'bouncing'), toggleStyle('div10', 'rolling')">Roll</button>
+    <div id="div9" class="smallSquare transformSlowly noBorder">
+        <div id="div10" class="tinyCircle innerRoller blue1" ></div>
+    </div>
+
+    <p>Spin</p>
+    <button onclick="toggleStyle('spinCont', 'spinning')">Spin</button>
+    <div class="spinPad">
+        <div id="spinCont" class="spinCont">
+            <div id="spinner" class="spinner"></div>
+            <div id="spinner1" class="spinner1"></div>
+            <div id="spinner2" class="spinner2"></div>
         </div>
-    <!-- </div> -->
-  </body>
+    </div>
+
+    <p>spin</p>
+    <button onclick="toggleStyle('ticker', 'ticking')">Spin</button>
+    <div class="clock">
+        <div class="clockFace">
+            <div id="ticker" class="ticker"></div>
+        </div>
+    </div>
+
+</body>
   <script>
       function addStyle(id, cls){
           document.getElementById(id).classList.add(cls);
