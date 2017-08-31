@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="roller.css">
     <link rel="stylesheet" href="spinner.css">
     <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="twirlingSun.css">    
   </head>
   <body>
     <p>Fade in/out the background color</p>
@@ -44,9 +45,8 @@
     <button onclick="toggleStyle('spinCont', 'spinning')">Spin</button>
     <div class="spinPad">
         <div id="spinCont" class="spinCont">
-            <div id="spinner" class="spinner"></div>
-            <div id="spinner1" class="spinner1"></div>
-            <div id="spinner2" class="spinner2"></div>
+            <div class="spinner"></div>
+            <div class="spinnerClipper"></div>
         </div>
     </div>
 
@@ -55,6 +55,16 @@
     <div class="clock">
         <div class="clockFace">
             <div id="ticker" class="ticker"></div>
+        </div>
+    </div>
+
+    <p>Rotating Sun</p>
+    <!-- <button onclick="toggleStyle('sun', 'rotating'), toggleStyle('cloud', 'rotating')">Spin</button> -->
+    <button onclick="toggleStyle('rotor', 'rotating'), toggleStyle('cloud', 'counterRotating')">Spin</button>    
+    <div class="sky">
+        <div id="rotor" class="rotor">
+            <div id="sun" class="sun"></div>
+            <div id="cloud" class="cloud"></div>
         </div>
     </div>
 
