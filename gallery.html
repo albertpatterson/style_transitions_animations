@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="spinner.css">
     <link rel="stylesheet" href="clock.css">
     <link rel="stylesheet" href="twirlingSun.css">    
+    <link rel="stylesheet" href="letter.css">    
   </head>
   <body>
     <p>Fade in/out the background color</p>
@@ -42,31 +43,21 @@
     </div>
 
     <p>Spin</p>
-    <button onclick="toggleStyle('spinCont', 'spinning')">Spin</button>
-    <div class="spinPad">
-        <div id="spinCont" class="spinCont">
-            <div class="spinner"></div>
-            <div class="spinnerClipper"></div>
-        </div>
-    </div>
-
-    <p>spin</p>
-    <button onclick="toggleStyle('ticker', 'ticking')">Spin</button>
-    <div class="clock">
-        <div class="clockFace">
-            <div id="ticker" class="ticker"></div>
-        </div>
-    </div>
+    <button data-toggle="class", data-target="spinner" data-class="spinning">Spin</button>
+    <div id="spinner" data-widget="spinner"></div>
+ 
+    <p>Tick</p>
+    <button data-toggle="class" data-target="clock" data-class="ticking">Tick</button>
+    <div id="clock" data-widget="clock"></div>
 
     <p>Rotating Sun</p>
-    <!-- <button onclick="toggleStyle('sun', 'rotating'), toggleStyle('cloud', 'rotating')">Spin</button> -->
-    <button onclick="toggleStyle('rotor', 'rotating'), toggleStyle('cloud', 'counterRotating')">Spin</button>    
-    <div class="sky">
-        <div id="rotor" class="rotor">
-            <div id="sun" class="sun"></div>
-            <div id="cloud" class="cloud"></div>
-        </div>
-    </div>
+    <button data-toggle="class" data-target="sunCloudSpinner" data-class="rotating">Rotate</button>
+    <div id="sunCloudSpinner" data-widget="sun-cloud-spinner"></div>
+
+    <p>Letter</p>
+    <button data-toggle="class" data-target="letter" data-class="closing">Close</button>
+    <div id="letter" data-widget="moving-closing-letter"></div>
+
 
 </body>
   <script>
@@ -80,4 +71,7 @@
         document.getElementById(id).classList.toggle(cls);
       }
   </script>
+
+
+  <script src = "widgets.js"></script>
 </html>

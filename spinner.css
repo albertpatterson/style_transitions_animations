@@ -2,6 +2,10 @@
     position: relative;
     width: 140px;
     height: 140px;
+    overflow: hidden;}
+
+.spinHub{
+    transform-origin: 70px 70px;
 }
 
 .spinner{
@@ -25,7 +29,7 @@
 }
 
 
-.spinning{
+.spinning .spinHub{
     animation-name: spin;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -37,9 +41,3 @@
     100% {transform: rotate(360deg)}
 }
 
-.spinPad{
-    border: 2px solid black;
-    width: 140px;
-    height: 140px;
-    overflow: hidden;
-}
