@@ -1,4 +1,4 @@
-.sky{
+.sun-cloud-spinner{
     position: relative;
     height: 300px;
     width: 200px;
@@ -33,7 +33,7 @@
     background-size: 100%;
 }
 
-.rotating .skyRotor{
+.rotating.skyRotor{
     animation-name: rotate;
     animation-duration: 2s;
     animation-iteration-count: infinite;

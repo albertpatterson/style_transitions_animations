@@ -1,9 +1,11 @@
 (function(){
     var spinnerParents = document.querySelectorAll("div[data-widget='spinner']");
     [].forEach.call(spinnerParents, function(spinnerParent){
+
         var fragment = document.createDocumentFragment();
         
         var cont = document.createElement("div");
+        cont.id = spinnerParent.id;
         cont.classList.add("spinCont");
         fragment.appendChild(cont);
 
@@ -19,6 +21,6 @@
         spinnerClipper.classList.add("spinnerClipper")
         hub.appendChild(spinnerClipper);
 
-        spinnerParent.appendChild(fragment);
+        document.body.replaceChild(fragment, spinnerParent);
     })
 })()

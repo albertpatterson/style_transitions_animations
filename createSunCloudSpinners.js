@@ -3,13 +3,14 @@
     [].forEach.call(spinnerParents, function(spinnerParent){
         var fragment = document.createDocumentFragment();
         
-        var sky = document.createElement("div");
-        sky.classList.add("sky");
-        fragment.appendChild(sky);
+        var spinnerCont = document.createElement("div");
+        spinnerCont.id = spinnerParent.id;
+        spinnerCont.classList.add("sun-cloud-spinner");
+        fragment.appendChild(spinnerCont);
 
         var skyRotor = document.createElement("div");
         skyRotor.classList.add("skyRotor");
-        sky.appendChild(skyRotor);
+        spinnerCont.appendChild(skyRotor);
 
         var sun = document.createElement("div");
         sun.classList.add("sun");
@@ -19,6 +20,6 @@
         cloud.classList.add("cloud")
         skyRotor.appendChild(cloud);
 
-        spinnerParent.appendChild(fragment);
+        document.body.replaceChild(fragment, spinnerParent)
     })
 })()
