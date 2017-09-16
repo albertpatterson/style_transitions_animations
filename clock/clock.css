@@ -1,3 +1,7 @@
+.clock{
+    position: relative;
+}
+
 .ticker{
     position: relative;
     left: 69px;
@@ -21,6 +25,18 @@
     width: 140px;
     height: 140px;
     overflow: hidden;
+    margin: auto;
+}
+
+.clockBackground{
+    background: white;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 @keyframes tick {

@@ -2,7 +2,8 @@
     position: relative;
     overflow: hidden;
     height: 100px;
-    width: 250px;
+    width: 105px;
+    margin: auto;
 }
 
 .foldContainer{
@@ -24,6 +25,7 @@
     border-top: 2px solid black;
     border-right: 2px solid black;
     transform: rotate(-45deg);
+    background: white;
 }
 
 .letterBody {

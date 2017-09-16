@@ -21,6 +21,6 @@
         spinnerClipper.classList.add("spinnerClipper")
         hub.appendChild(spinnerClipper);
 
-        document.body.replaceChild(fragment, spinnerParent);
+        spinnerParent.parentElement.replaceChild(fragment, spinnerParent);
     })
 })()

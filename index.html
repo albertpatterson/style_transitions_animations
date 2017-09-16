@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Styles Transitions and Animations</title>
+    <link rel="stylesheet" href="roller/roller.css">
+    <link rel="stylesheet" href="spinner/spinner.css">
+    <link rel="stylesheet" href="clock/clock.css">
+    <link rel="stylesheet" href="sun-cloud-spinner/sun-cloud-spinner.css">    
+    <link rel="stylesheet" href="letter/letter.css">    
+    <link rel="stylesheet" href="gallery.css">    
+  </head>
+  <body>
+    <ul id="galleryItems">
+        <li class="galleryItem">
+            <p class="itemLabel">Rotating Sun</p>
+            <button class="actionButton" data-toggle="class" data-target="sunCloudSpinner" data-class="rotating">Toggle Rotating</button>
+            <div id="sunCloudSpinner" data-widget="sun-cloud-spinner"></div>
+        </li>
+        <li class="galleryItem">
+            <p class="itemLabel">Letter</p>
+            <button class="actionButton" data-toggle="class" data-target="letter" data-class="closing">Toggle Close</button>
+            <div id="letter" data-widget="moving-closing-letter"></div>
+        </li>  
+        <li class="galleryItem">
+            <p class="itemLabel">Spin</p>
+            <button class="actionButton" data-toggle="class", data-target="spinner" data-class="spinning">Toggle Spinning</button>
+            <div id="spinner" data-widget="spinner"></div>
+        </li>
+        <li class="galleryItem">
+            <p class="itemLabel">Clock</p>
+            <button class="actionButton" data-toggle="class" data-target="clock" data-class="ticking">Toggle Ticking</button>
+            <div id="clock" data-widget="clock"></div>
+        </li>
+        <li class="galleryItem">
+            <p class="itemLabel">Roll</p>
+            <button class="actionButton" data-toggle="class" data-target="roller" data-class="rolling">Toggle Rolling</button>
+            <div id="roller" data-widget="roller"></div>
+        </li>                      
+    </ul>
+  <script src = "widgets.js"></script>
+</html>

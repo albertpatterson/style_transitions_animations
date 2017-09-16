@@ -20,6 +20,6 @@
         cloud.classList.add("cloud")
         skyRotor.appendChild(cloud);
 
-        document.body.replaceChild(fragment, spinnerParent)
+        spinnerParent.parentElement.replaceChild(fragment, spinnerParent)
     })
 })()
